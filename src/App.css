@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+
+.navBarMain {
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 5px 5px 10px #1F1F1F;
+  position: sticky;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto ;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+.link {
+  font-size: 190%;
+  color: #14FFEC;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  alignment: center;
+}
+
+#null {
+  display: none
+}
+
+.homeCenterDiv {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 95%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+
+}
+
+.rightDiv {
+  width: 60%;
+  color: #F1F1F1;
+  font-size: 280%;
+}
+
+.leftDiv {
+  width: 40%;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .homeCenterDiv {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .rightDiv {
+    width: 100%;
+  }
+
+  .leftDiv {
+    width: 100%;
+  }
+
+  .navBarMain {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  #docs {
+    display: none;
+  }
+
+  #reportABug {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #null {
+    display: block;
+    width: 1%;
+  }
+
+  .reportABugCode {
+    font-size: 25px;
+    overflow: hidden;
+  }
+}
+
