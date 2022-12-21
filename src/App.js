@@ -42,6 +42,10 @@ function HomePage() {
       width : '60%',
       color : '#F1F1F1',
       fontSize: '280%'
+    },
+
+    link : {
+      color: '#14FFEC'
     }
   }
   return (
@@ -60,6 +64,7 @@ function HomePage() {
             <br /> <br />
             Features an extremely simple syntax, inspired by Python and C++
           </p>
+          <a target={'_blank'} href={'https://github.com/skarlett-language/'} style={styles.link}>GitHub page</a>
         </div>
       </div>
     </div>
@@ -471,22 +476,23 @@ function Downloads() {
         fontSize : '40px',
         padding : '10px',
         margin : '5px',
-        borderWidth : '5px'
+        borderWidth : '5px',
+        cursor : 'pointer',
       }
 
     }
     /*<a href={null} style={style.btn}><button style={style.btn}>Linux amd64</button></a>*/
     return(
       <div style={style.style}>
-        <a href={linuxAarch64TarGz} style={style.btn}><button style={style.btn}>Linux arm64 / aarch64</button></a>
+        <a href={linuxAarch64TarGz} style={style.btn}><button className={'downloadsButton'} >Linux arm64 / aarch64</button></a>
 
-        <a href={linux86_64} style={style.btn}><button style={style.btn}>Linux x86_64</button></a>
+        <a href={linux86_64} style={style.btn}><button className={'downloadsButton'}>Linux x86_64</button></a>
 
-        <a href={linuxi386TarGz} style={style.btn}><button style={style.btn}>Linux i386 / i686</button></a>
+        <a href={linuxi386TarGz} style={style.btn}><button className={'downloadsButton'}>Linux i386 / i686</button></a>
 
-        <a style={style.btn} href={macOsZip}><button style={style.btn}>Mac 64 bit <br/> Intel Universal</button></a>
+        <a style={style.btn} href={macOsZip}><button className={'downloadsButton'}>Mac 64 bit <br/> Intel Universal</button></a>
 
-        <a href={windowsWizard} style={style.btn}><button style={style.btn}>Windows 64 bit</button></a>
+        <a href={windowsWizard} style={style.btn}><button className={'downloadsButton'}>Windows 64 bit</button></a>
       </div>
     )
   }
@@ -527,13 +533,13 @@ function Downloads() {
 
   return (
     <div style={styles.main}>
-      <p style={styles.title}>
+      <p className={'downloadsTitle'}>
         Download links:
       </p>
       <div style={styles.buttons}>
         <Downloads/>
       </div>
-      <p style={styles.title}>
+      <p className={'downloadsTitle'}>
         An installation guide is provided in each package,<br/> just follow the few steps and you'll be ready to go
       </p>
     </div>
@@ -552,7 +558,7 @@ function BugReport() {
   }
 
   return (
-    <div style={style.main}>
+    <div className={'bugReportMain'}>
       <p>
         As you could imagine, I removed every little bug I found during the test phase, but there could be something I missed out. <br/>
         If you encounter an unknown error (that you can't figure out reading the documentation), or a bug, please report is as soon as possible. <br/>
@@ -594,7 +600,6 @@ function App() {
   }
 
   function NavBar(){
-
     return (
       <div className={"navBarMain"}>
         <a onClick={mkHome} href={'#'} className={"link"} >Home</a>

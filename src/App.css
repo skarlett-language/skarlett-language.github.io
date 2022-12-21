@@ -76,7 +76,6 @@
   align-items: center;
   align-content: center;
   align-self: center;
-
 }
 
 .rightDiv {
@@ -96,6 +95,30 @@
   align-content: center;
 }
 
+.bugReportMain {
+  color: #FFF;
+  width: 80%;
+  align-self: center;
+  font-size: 40px;
+}
+
+.downloadsTitle {
+  font-size: 50px;
+  color: #14FFEC;
+}
+
+.downloadsButton {
+  background-color : #383B4B;
+  color : #14FFEC;
+  border-color : #14FFEC;
+  border-radius : 20px;
+  font-size : 40px;
+  padding : 10px;
+  margin : 5px;
+  border-width : 5px;
+  cursor : pointer;
+}
+
 @media screen and (max-width: 800px) {
   .homeCenterDiv {
     flex-direction: column;
@@ -104,6 +127,7 @@
 
   .rightDiv {
     width: 100%;
+    font-size: 25px;
   }
 
   .leftDiv {
@@ -131,7 +155,19 @@
 
   .reportABugCode {
     font-size: 25px;
-    overflow: hidden;
+    /*overflow: hidden;*/
+  }
+
+  .bugReportMain {
+    font-size: 25px;
+  }
+
+  .downloadsTitle {
+    font-size: 25px;
+  }
+
+  .downloadsButton {
+    font-size: 25px;
   }
 }
 
