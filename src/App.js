@@ -1,10 +1,10 @@
 import './App.css';
 import logo from './Skarlett-Logo.png';
 import React, {useState} from "react";
-import macOsZip from './pkgs/skarlett_1.0.0-macos-universal.zip';
-import linuxi386TarGz from './pkgs/skarlett_1.0.0-linux-i386.tar.gz';
-import linuxAarch64TarGz from './pkgs/skarlett_1.0.0-linux-arm64.tar.gz';
-import linux86_64 from './pkgs/skarlett_1.0.0-linux-x86_64.tar.gz';
+import macOsZip from './pkgs/skarlett_1.0.1-macos-universal.zip';
+import linuxi386TarGz from './pkgs/skarlett_1.0.1-linux-i386.tar.gz';
+import linuxAarch64TarGz from './pkgs/skarlett_1.0.1-linux-arm64.tar.gz';
+import linux86_64 from './pkgs/skarlett_1.0.1-linux-x86_64.tar.gz';
 import windowsWizard from './pkgs/Skarlett Installer.exe';
 
 
