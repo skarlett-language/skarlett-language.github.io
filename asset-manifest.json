@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.822cb599.css",
-    "main.js": "/static/js/main.c208cdb6.js",
+    "main.js": "/static/js/main.7eab1371.js",
     "static/js/787.2e74ce24.chunk.js": "/static/js/787.2e74ce24.chunk.js",
-    "static/media/skarlett_1.0.0-macos-universal.zip": "/static/media/skarlett_1.0.0-macos-universal.8ac0806fc51ab39202a1.zip",
-    "static/media/skarlett_1.0.0-linux-x86_64.tar.gz": "/static/media/skarlett_1.0.0-linux-x86_64.tar.b3b61fb8e9e2a9e733dc.gz",
-    "static/media/Skarlett Installer.exe": "/static/media/Skarlett Installer.40ea48a5a7d636c236fc.exe",
-    "static/media/skarlett_1.0.0-linux-i386.tar.gz": "/static/media/skarlett_1.0.0-linux-i386.tar.27b63c90461611e07d4c.gz",
-    "static/media/skarlett_1.0.0-linux-arm64.tar.gz": "/static/media/skarlett_1.0.0-linux-arm64.tar.e42f634c42c761d689c0.gz",
+    "static/media/skarlett_1.0.1-macos-universal.zip": "/static/media/skarlett_1.0.1-macos-universal.966033a61a405efb3547.zip",
+    "static/media/skarlett_1.0.1-linux-x86_64.tar.gz": "/static/media/skarlett_1.0.1-linux-x86_64.tar.9a8dad4b80dd827ccd1f.gz",
+    "static/media/Skarlett Installer.exe": "/static/media/Skarlett Installer.0cf65fd8c03500ba2573.exe",
+    "static/media/skarlett_1.0.1-linux-i386.tar.gz": "/static/media/skarlett_1.0.1-linux-i386.tar.21ee5339c67d1f1dc261.gz",
+    "static/media/skarlett_1.0.1-linux-aarch64.tar.gz": "/static/media/skarlett_1.0.1-linux-aarch64.tar.fc023fb28b82b7ac96f1.gz",
     "static/media/Skarlett-Logo.png": "/static/media/Skarlett-Logo.b4e95a088b0f91354aeb.png",
     "index.html": "/index.html",
     "main.822cb599.css.map": "/static/css/main.822cb599.css.map",
-    "main.c208cdb6.js.map": "/static/js/main.c208cdb6.js.map",
+    "main.7eab1371.js.map": "/static/js/main.7eab1371.js.map",
     "787.2e74ce24.chunk.js.map": "/static/js/787.2e74ce24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.822cb599.css",
-    "static/js/main.c208cdb6.js"
+    "static/js/main.7eab1371.js"
   ]
 }
