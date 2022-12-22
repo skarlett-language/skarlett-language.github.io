@@ -1,11 +1,11 @@
 import './App.css';
 import logo from './Skarlett-Logo.png';
 import React, {useState} from "react";
-import macOsZip from './pkgs/skarlett_1.0.1-macos-universal.zip';
-import linuxi386TarGz from './pkgs/skarlett_1.0.1-linux-i386.tar.gz';
-import linuxAarch64TarGz from './pkgs/skarlett_1.0.1-linux-arm64.tar.gz';
-import linux86_64 from './pkgs/skarlett_1.0.1-linux-x86_64.tar.gz';
-import windowsWizard from './pkgs/Skarlett Installer.exe';
+import macOsZip from './skarlett_1.0.1-macos-universal.zip';
+import linuxi386TarGz from './skarlett_1.0.1-linux-i386.tar.gz';
+import linuxAarch64TarGz from './skarlett_1.0.1-linux-aarch64.tar.gz';
+import linux86_64 from './skarlett_1.0.1-linux-x86_64.tar.gz';
+import windowsWizard from './Skarlett Installer.exe';
 
 
 function HomePage() {
@@ -534,14 +534,40 @@ function Downloads() {
   return (
     <div style={styles.main}>
       <p className={'downloadsTitle'}>
+        Current version: 1.0.1 <br/>
+        - visit <a className={'downloadsTitle'} href={'https://github.com/skarlett-language'}>GitHub</a> to learn more about updates
+      </p>
+      <p className={'downloadsTitle'}>
         Download links:
       </p>
       <div style={styles.buttons}>
         <Downloads/>
       </div>
       <p className={'downloadsTitle'}>
+        Not available yet for MacOs with Silicon processor
+      </p>
+      <p className={'downloadsTitle'}>
+        Command line installation: <br/>
+        - you will need to have wget installed
+        <br/> <br/>
+        Linux aarch64 / arm64
+        <Code text={'wget https://github.com/skarlett-language/skarlett-language.github.io/raw/master/src/skarlett_1.0.1-linux-aarch64.tar.gz && tar -xf skarlett_1.0.1-linux-aarch64.tar.gz && cd skarlett_1.0.1-linux-aarch64 && sudo chmod +x ./setup && ./setup'} />
+        <br/>
+        Linux x86_64
+        <Code text={'wget https://github.com/skarlett-language/skarlett-language.github.io/raw/master/src/skarlett_1.0.1-linux-x86_64.tar.gz && tar -xf skarlett_1.0.1-linux-x86_64.tar.gz && cd skarlett_1.0.1-linux-x86_64 && sudo chmod +x ./setup && ./setup'} />
+        <br/>
+        Linux i386
+        <Code text={'wget https://github.com/skarlett-language/skarlett-language.github.io/raw/master/src/skarlett_1.0.1-linux-i386.tar.gz && tar -xf skarlett_1.0.1-linux-i386.tar.gz && cd skarlett_1.0.1-linux-i386 && sudo chmod +x ./setup && ./setup'} />
+        <br/>
+        MacOs universal
+        <Code text={'wget https://github.com/skarlett-language/skarlett-language.github.io/raw/master/src/skarlett_1.0.1-macos-universal.zip && unzip skarlett_1.0.1-maccos-universal && cd skarlett_1.0.1-macos-universal && sudo chmod +x ./setup && ./setup'} />
+      </p>
+
+
+      <p className={'downloadsTitle'}>
         An installation guide is provided in each package,<br/> just follow the few steps and you'll be ready to go
       </p>
+
     </div>
   )
 }
